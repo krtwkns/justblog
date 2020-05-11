@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `just-blog`,
     author: `Kretawiweka Nuraga Sani`,
-    description: `A starter blog demonstrating what Reason and Gatsby can do.`,
+    description: `Just a blog powered by Gatsby, ReasonML and Markdown.`,
     siteUrl: `https://kretawiweka.site/`,
     social: {
       twitter: `ekanuragasan`,

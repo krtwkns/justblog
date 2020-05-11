@@ -1,6 +1,6 @@
 {
   "name": "just-blog",
-  "description": "A starter for a blog powered by Gatsby, ReasonML and Markdown",
+  "description": "Just a blog powered by Gatsby, ReasonML and Markdown",
   "version": "0.1.0",
   "author": "kretawiweka <ekanuraga@gmail.com>",
   "dependencies": {
