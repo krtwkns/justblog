@@ -47,7 +47,7 @@ let make = (~description, ~lang="en", ~meta=[], ~title) => {
     | Some(descriptionVal) => descriptionVal
     | None => siteMetadata.description
     };
-  let titleTemplate = "%s | " ++ siteMetadata.title;
+  let titleTemplate = siteMetadata.title;
   let htmlAttributes = {"lang": lang};
 
   /* Example of embedding raw JS into our Reason code. */

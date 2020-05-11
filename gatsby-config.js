@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Reason Blog`,
-    author: `Mukul Rathi`,
+    title: `just-blog`,
+    author: `Kretawiweka Nuraga Sani`,
     description: `A starter blog demonstrating what Reason and Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `http://kretawiweka.site/`,
     social: {
-      twitter: `mukulrathi_`,
+      twitter: `ekanuragasan`,
+      instagran: `ekanuragasan`
     },
   },
   plugins: [

@@ -1,11 +1,8 @@
 {
-  "name": "gatsby-starter-reason-blog",
+  "name": "just-blog",
   "description": "A starter for a blog powered by Gatsby, ReasonML and Markdown",
   "version": "0.1.0",
-  "author": "Mukul Rathi <msr45@cam.ac.uk",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "kretawiweka <ekanuraga@gmail.com>",
   "dependencies": {
     "bs-platform": "^7.2.2",
     "gatsby": "^2.19.7",
@@ -40,7 +37,6 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-  "homepage": "https://github.com/mukul-rathi/gatsby-starter-reason-blog#readme",
   "keywords": [
     "gatsby"
   ],
@@ -48,7 +44,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mukul-rathi/gatsby-starter-reason-blog.git"
+    "url": "git+https://github.com/kretawiweka/just-blog.git"
   },
   "scripts": {
     "build": "bsb -make-world && gatsby build",

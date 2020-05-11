@@ -22,7 +22,7 @@ let make = () => {
         {|
           graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/profile.jpg/" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
@@ -42,10 +42,9 @@ let make = () => {
       ],
     );
   let author = data##site##siteMetadata##author;
-  let social = data##site##siteMetadata##social;
   <div
     style={
-      ReactDOMRe.Style.make(~display="flex", ~marginBottom=rhythm(2.5), ())
+      ReactDOMRe.Style.make(~display="flex", ~marginBottom=rhythm(0.5), ())
     }>
     <Image
       fixed=data##avatar##childImageSharp##fixed
@@ -54,24 +53,29 @@ let make = () => {
         ReactDOMRe.Style.make(
           ~marginRight=rhythm(0.5),
           ~marginBottom="0",
-          ~minWidth="50",
+          ~width="100",
           ~borderRadius="100%",
           (),
         )
       }
-      imgStyle={ReactDOMRe.Style.make(~borderRadius="50%", ())}
+      imgStyle={ReactDOMRe.Style.make(~borderRadius="100%", ())}
     />
-    <p>
-      {React.string("Written by ")}
-      <strong> author </strong>
-      {React.string(" who ")}
-      <a href="https://mukulrathi.com/blog"> {React.string("blogs")} </a>
-      {React.string(" about the things he's
-        making. ")}
-      <a href={"https://twitter.com/" ++ social##twitter}>
-        {React.string("You should follow him on Twitter")}
-      </a>
-    </p>
+    <div     
+      style={
+        ReactDOMRe.Style.make(~display="flex", ~flexDirection="column",())
+    }>
+      <p style={
+        ReactDOMRe.Style.make(~marginBottom=rhythm(0.1), ())
+      }>
+        {React.string("Personal blog by ")}
+        <a href="http://kretawiweka.site"> <strong> author </strong> </a>
+      </p>
+      <p style={
+        ReactDOMRe.Style.make(~marginBottom=rhythm(0.1), ())
+      }>
+        {React.string("Coffee Drinker")}
+      </p>    
+    </div>
   </div>;
 };
 
