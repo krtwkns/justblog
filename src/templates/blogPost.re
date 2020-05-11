@@ -19,14 +19,14 @@ let make = (~data, ~pageContext, ~location) => {
   let siteTitle = data##site##siteMetadata##title;
   let previous = pageContext##previous;
   let next = pageContext##next;
-  let description =
+  /* let description =
     switch (post##frontmatter##description) {
     | Some(postDescription) => postDescription
     | None => post##excerpt
-    };
+    }; */
   let postTitle = post##frontmatter##title;
   <Layout location title=siteTitle>
-    <SEO title=postTitle description />
+    <SEO title=postTitle />
     <article>
       <header>
         <h1

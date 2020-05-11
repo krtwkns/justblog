@@ -22,7 +22,7 @@ type siteType = {siteMetadata: siteMetadataType};
 type queryResType = {site: siteType};
 
 [@react.component]
-let make = (~description, ~lang="en", ~meta=[], ~title) => {
+let make = ( ~lang="en", ~title) => {
   let data: queryResType =
     useStaticQuery(
       [%bs.raw
@@ -42,16 +42,16 @@ let make = (~description, ~lang="en", ~meta=[], ~title) => {
       ],
     );
   let siteMetadata = data.site.siteMetadata;
-  let metaDescription =
+  /* let metaDescription =
     switch (description) {
     | Some(descriptionVal) => descriptionVal
     | None => siteMetadata.description
-    };
+    }; */
   let titleTemplate = siteMetadata.title;
   let htmlAttributes = {"lang": lang};
 
   /* Example of embedding raw JS into our Reason code. */
-  let metaTagsFun = [%bs.raw
+  /* let metaTagsFun = [%bs.raw
     {| (siteMetadata, title, metaDescription, meta) =>
       [
         {
@@ -88,12 +88,11 @@ let make = (~description, ~lang="en", ~meta=[], ~title) => {
         },
       ].concat(meta)
       |}
-  ];
+  ]; */
   <Helmet
     title
     titleTemplate
     htmlAttributes
-    meta={metaTagsFun(siteMetadata, title, metaDescription, meta)}
   />;
 };
 

@@ -3,7 +3,7 @@ module.exports = {
     title: `just-blog`,
     author: `Kretawiweka Nuraga Sani`,
     description: `A starter blog demonstrating what Reason and Gatsby can do.`,
-    siteUrl: `http://kretawiweka.site/`,
+    siteUrl: `https://kretawiweka.site/`,
     social: {
       twitter: `ekanuragasan`,
       instagran: `ekanuragasan`
