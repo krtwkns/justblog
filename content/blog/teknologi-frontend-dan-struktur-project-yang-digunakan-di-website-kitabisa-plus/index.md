@@ -99,4 +99,4 @@ Folder `utils` berisi helper yang digunakan oleh Plus dan folder `services` beri
 
 Setiap project tentu memiliki kebutuhan yang berbeda kemudian struktur dan teknologi yang digunakan pasti berbeda. Oleh karena itu, teknologi dan struktur yang saya tulis disini sangatlah dinamis dan pasti tidak bisa di implementasikan ke semua project.
 
-Oleh karena itu, diskusi dan pemilihan teknologi dan penentuan struktur sangatlah penting dalam pengembangan project.
+Oleh karena itu, diskusi tentang pemilihan teknologi dan struktur project sangatlah penting dalam pengembangan project.
