@@ -70,7 +70,7 @@ Konsep redux yang ada di Plus sama seperti best practice yang ada, folder `actio
 
 *Kemudian dimana letak container ?*
 
-Atas saran Rian Riatno dan Santo Sidauruk, `container` pada Plus diletakkan di dalam `components`. 
+Atas saran Ryan Riatno dan Santo Sidauruk, `container` pada Plus diletakkan di dalam `components`. 
 Namun, dalam penerapannya ada perbedaan antara `component` dan `container` dalam folder `components`
 
 Jika `component` maka nama file nya adalah
