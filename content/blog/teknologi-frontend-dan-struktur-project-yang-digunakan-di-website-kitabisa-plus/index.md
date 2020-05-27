@@ -11,9 +11,13 @@ Sedikit cerita tentang KitabisaPlus, KitabisaPlus merupakan salah satu produk da
 
 Karena role saya di KitabisaPlus sebagai Frontend Engineer, maka saya disini fokus cerita tentang teknologi yang ada di website [KitabisaPlus](https://Plus.kitabisa.com/).
 
-Pada awalnya, codebase KitabisaPlus jadi satu dengan codebase Kitabisa. Setelah pengembangan jalan beberapa bulan, kami menemukan beberapa masalah, salah satunya yaitu semakin kompleksnya pengembangan produk KitabisaPlus. Oleh karena itu, kami memutuskan untuk memisahkan KitabisaPlus dari codebase Kitabisa. Inisiator utama dari pengembangan ini adalah Santo Sidauruk. 
+Pada awalnya, codebase KitabisaPlus jadi satu dengan codebase Kitabisa. Setelah pengembangan berjalan beberapa bulan, kami menemukan beberapa masalah, salah satunya yaitu semakin kompleksnya pengembangan produk KitabisaPlus. Oleh karena itu, kami memutuskan untuk memisahkan KitabisaPlus dari codebase Kitabisa. 
 
-Project baru KitabisaPlus sendiri diberi nama `Plus`. Plus menggunakan ReactJS dan static-typing nya menggunakan Typescript. Plus juga menggunakan NextJS sebagai Framework nya, menggunakan Redux sebagai state management dan menggunakan styled-component untuk styling.
+Project baru KitabisaPlus sendiri diberi nama `Plus`. Plus menggunakan ReactJS. Pada awalnya, codebase Plus yang ada di Kitabisa menggunakan ES6, kemudian ketika proses migrasi, kami memutuskan untuk menggunakan static-typing typescript.
+
+Menggunakan typescript tentu merubah struktur project Plus, diantaranya adanya penambahan folder `interfaces` yang berfungsi sebagai `interfaces` project (interfaces formik, redux dan lainnya). Kemudian, adanya penambahan types pada setiap component yang menggunakan typescript.
+
+Plus menggunakan NextJS sebagai Framework nya, menggunakan Redux sebagai state management dan menggunakan styled-component untuk styling.
 
 ## Struktur Plus
 
@@ -21,6 +25,7 @@ Berikut struktur project Plus secara garis besar
 
 ```
 ├── _infra
+├── interfaces
 ├── pages
 │   ├── ...file/folder app
 │   ├── _app.js
@@ -42,13 +47,13 @@ Berikut struktur project Plus secara garis besar
 ```
 
 Setiap project di kitabisa selalu ada folder `_infra`, folder tersebut berisi file yaml untuk kebutuhan tim DevOps. 
-Kemudian folder `pages` berisi page file (yang akan dibahas di bagian `Routes Plus` dibawah), Sedangkan fungsi 3 file lainnya bisa dibaca di [_app.js](https://nextjs.org/docs/advanced-features/custom-app),  [_document.js](https://nextjs.org/docs/advanced-features/custom-document) dan [_error.js](https://nextjs.org/docs/advanced-features/custom-error-page).
+Kemudian folder `pages` berisi page file (yang akan dibahas di bagian `Routes` dibawah), Sedangkan fungsi 3 file lainnya bisa dibaca di [_app.js](https://nextjs.org/docs/advanced-features/custom-app),  [_document.js](https://nextjs.org/docs/advanced-features/custom-document) dan [_error.js](https://nextjs.org/docs/advanced-features/custom-error-page).
 
 Pada folder `params` berisi env yang ada pada Plus, folder `public` berisi static file yang digunakan di Plus dan folder `src` yang akan dibahas pada bagian `Folder src` dibawah
 
 Kemudian untuk fungsi dari kedua file terakhir bisa dibaca di dokumentasi [next.config.js](https://nextjs.org/docs/api-reference/next.config.js/introduction) dan [server.js](https://nextjs.org/docs/advanced-features/custom-server)
 
-### A. Routes Plus
+### A. Routes
 ***
 Salah satu kelebihan menggunakan NextJS adalah beberapa hal yang sudah dihandle oleh NextJS nya, salah satunya terkait routes. Di Plus kita tidak perlu menentukan routes dalam satu file, cukup memberi nama folder atau file maka NextJS akan membaca nama folder atau file itu sebagai routes. 
 
@@ -70,7 +75,7 @@ Konsep redux yang ada di Plus sama seperti best practice yang ada, folder `actio
 
 *Kemudian dimana letak container ?*
 
-Atas saran Ryan Riatno dan Santo Sidauruk, `container` pada Plus diletakkan di dalam `components`. 
+Setelah berdiskusi dengan rekan saya, Ryan Riatno dan Santo Sidauruk, `container` pada Plus diletakkan di dalam `components`. 
 Namun, dalam penerapannya ada perbedaan antara `component` dan `container` dalam folder `components`
 
 Jika `component` maka nama file nya adalah
