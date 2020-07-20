@@ -1,14 +1,14 @@
-# Blog Gatsby ReasonML
+# justblog
 
 ## Getting started
 
-`git clone https://github.com/kretawiweka/just-blog/`
+`git clone https://github.com/kretawiweka/justblog/`
 
 Then to set up the repo:
 
 ```bash
 cd your-blog
-yarn 
+yarn
 yarn develop
 ```
 
