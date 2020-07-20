@@ -1,21 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `just-blog`,
-    author: `Kretawiweka Nuraga Sani`,
-    description: `Just a blog powered by Gatsby, ReasonML and Markdown.`,
-    siteUrl: `https://kretawiweka.site/`,
-    social: {
-      twitter: `ekanuragasan`,
-      instagran: `ekanuragasan`
+    title: `justblog`,
+    author: {
+      name: `Kretawiweka`,
+      summary: `I tell story about software engineering`,
     },
+    description: `Just a blog powered by Gatsby.`,
+    siteUrl: `https://kretawiweka.site/`,
   },
   plugins: [
-    {
-      resolve: "gatsby-plugin-reason",
-      options: {
-        derivePathFromComponentName: true,
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -57,14 +50,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
+        //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter ReasonML Blog`,
+        name: `Gatsby Starter Blog`,
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,
@@ -80,8 +73,13 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline
-    // functionality
+    {
+      resolve: "gatsby-plugin-typography",
+      options: {
+        pathToConfigModule: "src/utils/typography.js",
+      },
+    },
+    // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
