@@ -42,7 +42,12 @@ body code {
   text-shadow: none;
 }
 
-ul li {
+article {
+  margin: 1em 0;
+}
+
+footer {
+  margin-top: 2em;
 }
 
 .header-page {
