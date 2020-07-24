@@ -19,7 +19,7 @@ const BlogIndex = ({ data, location }) => {
           <article key={node.fields.slug}>
             <header
               style={{
-                marginBottom: `1.000em`,
+                marginBottom: `.500em`,
               }}
             >
               <h3

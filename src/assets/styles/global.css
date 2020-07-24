@@ -24,14 +24,25 @@ body.dark code {
   background-color: #6d6d6d;
   color: #e0e0e0;
   text-shadow: none;
-  border-radius: 7px;
 }
 
 body.dark pre {
   background-color: #6d6d6d;
   color: #e0e0e0;
-  border-radius: 7px;
   text-shadow: none;
+}
+
+body pre {
+  border-radius: 21px;
+  text-shadow: none;
+}
+
+body code {
+  border-radius: 21px;
+  text-shadow: none;
+}
+
+ul li {
 }
 
 .header-page {
