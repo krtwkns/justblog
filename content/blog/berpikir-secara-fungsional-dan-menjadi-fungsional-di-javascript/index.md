@@ -1,5 +1,5 @@
 ---
-title: Berpikir Funsional dan Menjadi Fungsional di Javascript
+title: Berpikir Secara Funsional dan Menjadi Fungsional di Javascript
 date: "2020-07-24T22:40:32.169Z"
 description: Konsep dari Funsional Programming dan penerapannya di Javascript.
 ---
