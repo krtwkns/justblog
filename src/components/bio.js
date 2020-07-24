@@ -56,6 +56,7 @@ const Bio = () => {
         <p
           style={{
             marginBottom: 0,
+            marginTop: 0,
           }}
         >
           <strong>{author.name}</strong>
@@ -63,6 +64,7 @@ const Bio = () => {
         <p
           style={{
             marginBottom: 0,
+            marginTop: 0,
           }}
         >
           {author.summary}
