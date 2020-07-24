@@ -4,9 +4,9 @@ date: "2020-07-24T22:40:32.169Z"
 description: Konsep dari Funsional Programming dan penerapannya di Javascript.
 ---
 
-# Fungsional Programming ?
+# Fungsional Programming?
 
-Pada saat ini, Functional Programming menjadi satu hal yang wajib diketahui khususnya oleh javascript ninja. Ada beberapa yang hanya pernah mendengarkan istilah itu, atau bahkan ada juga yang sudah tak sadar secara langsung menggunakan Functional Programming. Jadi Apakah Functional Programming itu ? Singkatnya, Functional Programming adalah metode dari coding yang mengutamakan penggunaan fungsi. Kamu dapat mengaplikasikan Functional Programming di client-side (browser-based) ataupun di server-side (nodejs)
+Pada saat ini, Functional Programming menjadi satu hal yang wajib diketahui khususnya oleh javascript ninja. Ada beberapa yang hanya pernah mendengarkan istilah itu, atau bahkan ada juga yang sudah tak sadar secara langsung menggunakan Functional Programming. Jadi Apakah Functional Programming itu? Singkatnya, Functional Programming adalah metode dari coding yang mengutamakan penggunaan fungsi. Kamu dapat mengaplikasikan Functional Programming di client-side (browser-based) ataupun di server-side (nodejs)
 
 ## Konsep Fundamental Functional Programming
 
