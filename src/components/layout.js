@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import ThemeToggler from "./theme-toggler"
-import "../../public/assets/styles/global.css"
+import "../assets/styles/global.css"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
