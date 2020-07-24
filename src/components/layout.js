@@ -1,6 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import ThemeToggler from "./theme-toggler"
+import "../../public/assets/styles/global.css"
+
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
@@ -9,9 +12,9 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h1
         style={{
-          marginBottom: `1.250em`,
-          marginTop: 0,
           fontSize: `2.250em`,
+          fontWeight: 600,
+          margin: 0,
         }}
       >
         <Link
@@ -28,12 +31,17 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
-      <h2>
+      <h2
+        style={{
+          margin: 0,
+        }}
+      >
         <Link
           style={{
             boxShadow: `none`,
             color: `inherit`,
             textDecoration: `none`,
+            fontWeight: 600,
           }}
           to={`/`}
         >
@@ -49,9 +57,13 @@ const Layout = ({ location, title, children }) => {
         marginRight: `auto`,
         maxWidth: `720px`,
         padding: `1.500em`,
+        color: "var(--textNormal)",
+        transition: "color 0.2s ease-out, background 0.2s ease-out",
       }}
     >
-      <header>{header}</header>
+      <header className="header-page">
+        {header} <ThemeToggler />
+      </header>
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with
