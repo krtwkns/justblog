@@ -65,7 +65,7 @@ const Layout = ({ location, title, children }) => {
         {header} <ThemeToggler />
       </header>
       <main>{children}</main>
-      <footer>
+      <footer style={{ marginTop: "3.5em" }}>
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>

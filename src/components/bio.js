@@ -35,7 +35,7 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        marginBottom: `2.500em`,
+        marginBottom: `3.500em`,
         alignItems: `center`,
       }}
     >
@@ -55,14 +55,14 @@ const Bio = () => {
       <div>
         <p
           style={{
-            marginBottom: 0,
+            margin: 0,
           }}
         >
           <strong>{author.name}</strong>
         </p>
         <p
           style={{
-            marginBottom: 0,
+            margin: 0,
           }}
         >
           {author.summary}
